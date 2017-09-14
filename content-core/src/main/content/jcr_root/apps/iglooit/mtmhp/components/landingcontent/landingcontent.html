@@ -1,0 +1,19 @@
+
+<sly data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+    <div>
+        <img src="/etc/designs/phonegap/iglooit/mtmhp/clientlibsall/img/prepaid.png">
+    </div>
+
+    <button class="button button-block button-calm">
+        Just Let me IN!
+    </button>
+</sly>
+<sly data-sly-test="${!wcmmode.edit}" data-sly-unwrap>
+    <div ng-controller="LandingPageCtrl" ng-model="author" ng-init="author=false">
+        <img src="/etc/designs/phonegap/iglooit/mtmhp/clientlibsall/img/prepaid.png">
+    </div>
+
+    <button class="button button-block button-calm">
+        Just Let me IN!
+    </button>
+</sly>

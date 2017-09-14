@@ -1,0 +1,16 @@
+<script type="text/ng-template" id="feedlist.html">
+    <div>
+        <div ng-show="error" class="alert alert-danger">
+            <h5 class="text-center">Oops... Something bad happened, please try later :(</h5>
+        </div>
+        <div class="list">
+            <a ng-repeat="feed in feeds | orderBy:publishedDate:reverse" class="item item-thumbnail-left"
+               href="{{feed.link}}">
+                <img src="{{feed.thumbnail.url}}">
+                <h2 class="media-heading">{{feed.title}}</h2>
+                <p ng-bind-html="feed.description[0]"></p>
+            </a>
+            <hr ng-if="!$last"/>
+        </div>
+    </div>
+</script>

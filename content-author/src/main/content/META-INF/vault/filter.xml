@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <!--<filter root="/content/mobileapps/mtmhp">-->
+        <!--<include pattern="/content/mobileapps/mtmhp(/.*)?"/>-->
+        <!--<exclude pattern="/content/mobileapps/mtmhp/shell(/.*)?"/>-->
+    <!--</filter>-->
+</workspaceFilter>

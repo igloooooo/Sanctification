@@ -1,0 +1,93 @@
+<div ng-controller="SettingPageCtrl" ng-init="initValue()">
+    <h4 class="border-top"><i class="icon ion-gear-a"></i> General</h4>
+    <div class="list">
+        <ion-toggle ng-model="bNotification">
+            Push Notification
+        </ion-toggle>
+        <ion-toggle ng-model="bAutoPlay">
+            Auto Play Video
+        </ion-toggle>
+        <ion-toggle ng-model="bDownloadInWifi">
+            Only Download Image in WIFI
+        </ion-toggle>
+        <ion-toggle ng-model="bAutoRefreshFeed">
+            Auto Refresh News
+        </ion-toggle>
+        <ion-toggle ng-model="bShowTestAd">
+            Show Test Mobile AD
+        </ion-toggle>
+        <br/>
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label">My Account Number</span>
+            <input type="text" placeholder="My Account Number" class="">
+        </label>
+        <br/>
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Last Name</span>
+            <input type="text" placeholder="Last Name">
+        </label>
+        <br>
+        <div class="item item-checkbox">
+            <label class="checkbox">
+                <input type="checkbox">
+            </label>
+            I read the terms &amp; conditions.
+        </div>
+        <div class="item item-checkbox">
+            <label class="checkbox">
+                <input type="checkbox" value="on">
+            </label>
+            Haha, you liar. There are no T&amp;Cs.
+        </div>
+        <div class="item range range-positive">
+            <i class="icon ion-ios-sunny-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="33">
+            <i class="icon ion-ios-sunny"></i>
+        </div>
+        <br>
+        <label class="item item-radio">
+            <input type="radio" name="group" value="on">
+            <div class="item-content">
+                Tap Me
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+        </label>
+        <label class="item item-radio">
+            <input type="radio" name="group" value="on">
+            <div class="item-content">
+                Or Tap Me
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+        </label>
+        <label class="item item-radio">
+            <input type="radio" name="group" value="on">
+            <div class="item-content">
+                Or Tap Me
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+        </label>
+
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Most Influential Teletubby
+            </div>
+            <select>
+                <option value="Laa-Laa">Laa-Laa</option>
+                <option selected="" value="Tinky Winky">Tinky Winky</option>
+                <option value="Dipsy">Dipsy</option>
+                <option value="Po">Po</option>
+                <option value="Noo-noo">Noo-noo</option>
+            </select>
+        </label>
+
+
+    </div>
+    <h4 class="border-top"><i class="icon ion-gear-a"></i> Reset</h4>
+    <div class="list">
+        <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1">
+            Save
+        </button>
+    </div>
+</div>

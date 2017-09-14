@@ -1,0 +1,12 @@
+#base=js
+
+ionic.bundle.js
+ionic.material.js
+
+feeds2json.js
+
+angular-resource.min.js
+angular-route.min.js
+angular-touch.min.js
+angular-youtube-embed.min.js
+angular-feeds.js

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Template for building Ionic PhoneGap pages"
+    jcr:primaryType="cq:Template"
+    jcr:title="m-TMHP Video page"
+    allowedParents="[/apps/iglooit/mtmhp/templates/ng-ionic-page]"
+    allowedPaths="[/content/mobileapps(/.*)?,/content/mobileapps(/.*)?]"
+    ranking="{Long}-3">
+    <jcr:content
+        cq:designPath="/etc/designs/phonegap/iglooit/mtmhp"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="iglooit/mtmhp/components/video-page"/>
+</jcr:root>

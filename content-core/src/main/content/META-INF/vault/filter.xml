@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/iglooit/mtmhp"/>
+    <filter root="/etc/clientlibs/iglooit/ionic-1.1.0"/>
+    <filter root="/etc/clientlibs/iglooit/phonegap-ready"/>
+    <filter root="/etc/clientlibs/iglooit/utility"/>
+    <filter root="/etc/designs/phonegap/iglooit/mtmhp"/>
+    <filter root="/content/dam/iglooit/mtmhp"/>
+</workspaceFilter>
