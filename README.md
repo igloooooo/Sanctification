@@ -1,12 +1,12 @@
-AEM Apps Starter Kit
+Telstra Media Home Page Mobile Version
 ====================
 
-:new: Note that the requirements have changed as of September 2016. If you do not have AEM 6.2, please use the `release/6.1-FP2` branch.
+This is the POC of Telstra Media Home Page
 
 
 ### Goal 
 
-To provide you - the developer - with an AEM Apps project on your filesystem, ready to be built and installed to a running AEM 6.2 instance and committed to a version control system.
+To provide the code base of Mobile AEM for Telstra Media Home Page.
 
 
 ### Requirements
@@ -24,18 +24,6 @@ To provide you - the developer - with an AEM Apps project on your filesystem, re
 
 Clone this repository to your machine to begin.
 
-
-### Customize
-
-This repository is built around two placeholders to enable quick customization: `brand_name_placeholder` and `app_name_placeholder`.
-
-To customize this boilerplate for your own project, simply replace every occurrence of these two variables with (JCR-friendly) names of your choice. You can use [customize-app.sh](customize-app.sh) for this, if you're using bash.
-
-For example, let's say my brand name is 'Geometrixx' (originality is not the goal here) and app name is 'ShapesCon'. 
-
-Note: the following has only been tested on OS X. YMMV.
-
-	./customize-app.sh Geometrixx ShapesCon
 
 
 ### Install
@@ -64,57 +52,5 @@ From the project root, run:
 - Complete the wizard
 
 
-### Edit in AEM
-
-Once built and installed via maven, your new app should be editable in AEM. Take a look at the new [Apps admin console](http://localhost:4502/aem/apps.html/content/mobileapps) to view the available apps on your instance.
-
-A new app folder with the brand name you specified above ('Geometrixx' in my case) should be listed. Tap it to view the app you created, which will be listed with the PhoneGap logo as it's thumbnail. If you followed the instructions exactly and have your author instance running locally on :4502, you should be able to author your new app via the following link:
-
-[http://localhost:4502/editor.html/content/mobileapps/Geometrixx/ShapesCon/en/home.html](http://localhost:4502/editor.html/content/mobileapps/Geometrixx/ShapesCon/en/home.html)
-
-A few things to try:
-
-- Add a child page. It will become linked via the Ionic Menu List component already included on the home page of your app
-- Add an image or text component
-- Check out the [aem-phonegap-kitchen-sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) project to experiment with a number of components that deal with PhoneGap's device APIs
-- Enter 'preview' mode, and drag the page to the right to reveal the left shelf menu
-
-
-### Run on the iOS Simulator
-
-From the [Apps console](http://localhost:4502/aem/apps.html/content/mobileapps), navigate to your app's [Command Center](http://localhost:4502/libs/mobileapps/admin/content/dashboard.html/content/mobileapps/Geometrixx/ShapesCon/shell) (your URI will differ based on the values you provided to `customize-app.sh`).
-
-Locate the 'PhoneGap Build' tile, and the down arrow to the top right of the pane. Tap this arrow, then tap the 'Download CLI' item to initiate a download of your app's content. A .zip payload will be downloaded locally. Using your command line of choice, navigate to the directory created by extracting the payload. Using OS X? this handy [Finder toolbar app](https://github.com/jbtule/cdto) makes it easy.
-
-Using the [PhoneGap CLI](https://github.com/phonegap/phonegap-cli), build and deploy your application to the iOS Simulator with the following command:
-
-    phonegap emulate ios
-
-Note: at the time of writing there is an open issue with Apple's ATS and Cordova-ios. See the following [note in our docs](http://docs.adobe.com/docs/en/aem/6-1/develop/mobile-apps/apps.html#Developing%20for%20IOS%209%20and%20HTTP%20hosts) for a workaround.
-
-
-### Using with VLT
-
-To use vlt with this project, first build and install the package to your local AEM instance as described above. Then `cd content/src/main/content/jcr_root/` and run:
-
-    vlt --credentials admin:admin checkout -f ../META-INF/vault/filter.xml --force http://localhost:4502/crx
-
-Once the working copy is created, you can use the normal ``vlt up`` and ``vlt ci`` commands.
-
-
-### On 'Content Security Policy'
-
-A very open Content-Security-Policy meta tag has been included in [two](content-shell/src/main/content/jcr_root/apps/brand_name_placeholder/app_name_placeholder/components/ng-ionic-page/css_clientlibs.jsp) [places](content-shell/src/main/content/jcr_root/apps/brand_name_placeholder/app_name_placeholder/components/splash-page/headlibs.jsp). You should review [the documentation](https://github.com/apache/cordova-plugin-whitelist#content-security-policy) on its usage and adjust this tag for your particular app's requirements.
-
-
-### A note on localhost
-
-`localhost` takes on a different meaning when your app is running on Android, [unfortunately](http://developer.android.com/tools/devices/emulator.html#networkaddresses). As a workaround you can use either `http://10.0.2.2:4503/` as your app's "Update URL" (which will fail on iOS), or set it to the IP address of your machine.
-
-
-### Uninstall
-
-Just testing the waters? No problem. From the [package manager console](http://localhost:4502/crx/packmgr/index.jsp), locate the package named 'your-app-name-content-1.0-SNAPSHOT.zip'. It should be at the top of the list. Uninstall this package to remove your app, it's template, component, design, and supporting clientlibs.
-
-
 # Sanctification
+This is just a name, :)
